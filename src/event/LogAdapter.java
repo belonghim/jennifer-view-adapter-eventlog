@@ -36,6 +36,7 @@ public class LogAdapter implements JenniferAdapter {
 				pattern = pattern.replaceFirst("%serviceName", "" + model.getServiceName());
 				pattern = pattern.replaceFirst("%message", "" + messageFormat);
 				pattern = pattern.replaceFirst("%detailMessage", "" + model.getDetailMessage());
+				pattern = pattern.replaceFirst("%customMessage", "" + model.getCustomMessage());
 
 				Logger.info(pattern);
 			}
